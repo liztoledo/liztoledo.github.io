@@ -50,7 +50,21 @@
    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
      <div class="modal-dialog modal-lg" role="document">
        <div class="modal-content">
-      NO THIS IS PATRICK
+      NO THIS IS PATRICK    
+  <script type="text/javascript">
+    function randomImg1() {
+      var myImages1 = new Array ();
+      myImages1[1] = "http://memesvault.com/wp-content/uploads/Patrick-Meme-02.jpg";
+      myImages1[2] = "http://memesvault.com/wp-content/uploads/Spongebob-Meme-Fish-Face-10.jpg";
+      myImages1[3] = "https://pbs.twimg.com/profile_images/735571268641001472/kM_lPhzP.jpg";
+      var rnd = Math.floor( Math.random() * myImages1.length );
+      if( rnd == 0 ) {
+        rnd =1;
+      }
+      html_code = '<img class="who" src="' + myImages1[rnd] + '" />";
+      document.write(html_code);
+    }
+</script>
       
        </div>
      </div>
